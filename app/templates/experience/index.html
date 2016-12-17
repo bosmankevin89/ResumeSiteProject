@@ -1,0 +1,19 @@
+<section ng-controller="ExperiencePanelController as panel">
+    <ul class="nav nav-pills">
+        <li ng-class="{ active:panel.isSelected(1)}">
+            <a ng-click="panel.selectTab(1)">Professional Experience</a>
+        </li>
+        <li ng-class="{ active:panel.isSelected(2)}">
+            <a ng-click="panel.selectTab(2)">Non-Software Experience</a>
+        </li>
+    </ul>
+
+    <div class="panel" ng-show="panel.isSelected(1)">
+        <professional-experience-list></professional-experience-list>
+    </div>
+
+    <div class="panel" ng-show="panel.isSelected(2)">
+        <p>TODO</p> <!--<professional-experience-list></professional-experience-list>-->
+    </div>
+
+</section>
