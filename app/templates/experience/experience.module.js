@@ -3,24 +3,19 @@
  */
 (function(){
     angular.module('experience-module',[])
-        .controller('ExperienceController',
-            function() {
-                this.retrieveExperiences =  [
-                        {
-                            company: 'Company A'
-                            , position: 'Job'
-                        },
-                        {
-                            company: 'Company B'
-                            , position: 'Job'
-                        }
-                    ];
-
-            }
-        )
         .controller('ExperiencePanelController',
-            function() {
+            function($scope) {
                 this.tab = 1;
+                $scope.experiences =  [
+                    {
+                        company: 'Company A'
+                        , position: 'Job'
+                    },
+                    {
+                        company: 'Company B'
+                        , position: 'Job'
+                    }
+                ];
 
                 this.selectTab = function(setTab){
                     this.tab = setTab;
@@ -31,20 +26,13 @@
                 }
             }
         )
-        .directive('professionalExperienceList',
-            function(){
-                return {
+        .component('professionalExperienceList',
+            {
                     restrict: 'E'
-                    , templateUrl: 'app/templates/experience/fragments/professional/professional-experience-list-fragment.html'
-                };
-            }
-        )
-        .directive('jobExperienceBlock',
-            function(){
-                return {
-                    restrict: 'E'
-                    , templateUrl: 'app/templates/experience/fragments/job-fragment.html'
-                };
-            }
-        );
+                    , bindings: {
+                        data: '<'
+                    }
+                    , templateUrl: 'app/templates/experience/fragments/experience-list-fragment.html'
+
+            });
 })();
