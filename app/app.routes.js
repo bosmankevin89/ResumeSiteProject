@@ -7,17 +7,8 @@ angular.module('resume-app')
         $routeProvider.when('/about', {
             templateUrl:'app/templates/about/index.html'
         })
-        .when('/skills', {
-            templateUrl:'app/templates/skills/index.html'
-        })
-        .when('/experience', {
-            templateUrl:'app/templates/experience/index.html'
-        })
-        .when('/education', {
-            templateUrl:'app/templates/education/index.html'
-        })
-        .when('/contact', {
-            templateUrl:'app/templates/contact/index.html'
+        .when('/resume', {
+            templateUrl:'app/templates/resume/index.html'
         })
         .otherwise({ redirectTo: '/about' });
     });

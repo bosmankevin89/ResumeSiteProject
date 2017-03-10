@@ -1,3 +1,3 @@
 (function(){
-    angular.module('resume-app',['ngRoute', 'experience-module']);
+    angular.module('resume-app',['ngRoute', 'resume-module']);
 })();

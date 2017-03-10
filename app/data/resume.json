@@ -1,4 +1,4 @@
-var resume = {
+{
     "basic" : {
         "name": "Kevin Bosman",
         "label": "Programmer",
@@ -65,4 +65,4 @@ var resume = {
           ]
       }
   ]
-};
+}

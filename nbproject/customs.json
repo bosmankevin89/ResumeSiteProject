@@ -1,5 +1,8 @@
 {
-    "elements": {},
+    "elements": {
+        "experience-list": {},
+        "job-experience": {}
+    },
     "attributes": {
         "integrity": {
             "context": "link"
