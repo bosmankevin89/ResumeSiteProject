@@ -6,13 +6,25 @@
         .controller('ExperiencePanelController',
             function($scope) {
                 this.tab = 1;
-                $scope.experiences =  [
+
+                $scope.professional_experiences =  [
                     {
                         company: 'Company A'
                         , position: 'Job'
                     },
                     {
                         company: 'Company B'
+                        , position: 'Job'
+                    }
+                ];
+
+                $scope.non_development_experiences =  [
+                    {
+                        company: 'Company C'
+                        , position: 'Job'
+                    },
+                    {
+                        company: 'Company D'
                         , position: 'Job'
                     }
                 ];
@@ -26,7 +38,7 @@
                 }
             }
         )
-        .component('professionalExperienceList',
+        .component('experienceList',
             {
                     restrict: 'E'
                     , bindings: {
