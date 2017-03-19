@@ -1,8 +1,15 @@
 {
     "elements": {
         "job-experience-list": {},
+        "education": {},
+        "skills-list": {},
         "experience-list": {},
-        "job-experience": {}
+        "job-experience": {},
+        "basic-information": {
+            "attributes": {
+                "data": {}
+            }
+        }
     },
     "attributes": {
         "integrity": {

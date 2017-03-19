@@ -18,12 +18,12 @@
                         ctrl.getBasicInfo = function () {
                             return ctrl.resumeJSON["basic"];
                         };
-                        
+
                         //education
                         ctrl.getEducation = function () {
                             return ctrl.resumeJSON["education"];
                         };
-                        
+
                         //skills
                         ctrl.getSkills = function () {
                             return ctrl.resumeJSON["skills"];
@@ -35,13 +35,37 @@
                         };
                     }
             )
+            .component('basicInformation',
+                    {
+                        restrict: 'E'
+                        , bindings: {
+                            data: '<'
+                        }
+                        , templateUrl: 'app/templates/resume/fragments/basic_info/basic-information.html'
+                    })
+            .component('education',
+                    {
+                        restrict: 'E'
+                        , bindings: {
+                            data: '<'
+                        }
+                        , templateUrl: 'app/templates/resume/fragments/education/education.html'
+                    })
+            .component('skillsList',
+                    {
+                        restrict: 'E'
+                        , bindings: {
+                            data: '<'
+                        }
+                        , templateUrl: 'app/templates/resume/fragments/skills/skills-list.html'
+                    })
             .component('jobExperienceList',
                     {
                         restrict: 'E'
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/job-experience-list.html'
+                        , templateUrl: 'app/templates/resume/fragments/job_experience/job-experience-list.html'
                     })
             .component('jobExperience',
                     {
@@ -49,6 +73,6 @@
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/job-experience.html'
+                        , templateUrl: 'app/templates/resume/fragments/job_experience/job-experience.html'
                     });
 })();

@@ -2,7 +2,7 @@
  * Created by Kevin Bosman on 12/16/2016.
  */
 
-angular.module('resume-app')
+angular.module('website-app')
     .config(function($routeProvider){
         $routeProvider.when('/about', {
             templateUrl:'app/templates/about/index.html'

@@ -1,3 +1,14 @@
 <div ng-controller="ResumeController as resumeCtrl">
+    
+    <!-- Display Basic Information -->
+    <basic-information data="resumeCtrl.getBasicInfo()"></basic-information>
+    
+    <!-- Display Skills -->
+    <skills-list data="resumeCtrl.getSkills()"></skills-list>
+    
+    <!-- Display Education -->
+    <education data="resumeCtrl.getEducation()"></education>
+    
+    <!-- Display Professional Experience -->
     <job-experience-list data="resumeCtrl.getJobExperiences()"></job-experience-list>
 </div>
