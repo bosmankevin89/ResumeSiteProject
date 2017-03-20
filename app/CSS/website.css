@@ -8,40 +8,49 @@ and open the template in the editor.
     Author     : Kevin Bosman
 */
 
+/*
+    Color scheme #1
+        
+        #3364B2
+        #168D96
+        #6C95B7
+        #80CECB
+        #AEDEE2 
+*/
+
+/*
+    Color scheme FVK
+        
+        #C09033  
+        #EEE7EB  
+        #C7D3D4  
+        #81BCBC  
+        #574F4F
+*/
+
+
 body {
-    background-color: rgb(211, 221, 237);
+    background-color: #C7D3D4;
     font-family: 'Aldrich';
     font-size: 22px;
+    margin-top: 75px;
 }
 
-@media (min-width: 34em) {
-    .card-columns {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
-    }
+.resume ul {
+    list-style-type:none
 }
 
-@media (min-width: 48em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
+.card {
+    word-wrap: break-word;
+    background-color: #EEE7EB;
 }
 
-@media (min-width: 62em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
+.card header {
+    word-wrap: break-word;
+    background-color: #81BCBC;
+    color: #EEE7EB;
 }
 
-@media (min-width: 75em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
-    }
+.card .resume-icon {
+    color: #C09033;
 }

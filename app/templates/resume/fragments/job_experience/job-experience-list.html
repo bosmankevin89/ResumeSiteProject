@@ -1,9 +1,10 @@
-<div class="card-header">
-    Professional Experience
-</div>
-<div>
-    <div ng-repeat="job in $ctrl.data">
-        <job-experience data="job"></job-experience>
+<div class="card w3-card-8 w3-margin-bottom">
+    <header class="w3-container">
+        <span class="glyphicon glyphicon-briefcase resume-icon" aria-hidden="true"></span> Professional Experience
+    </header>
+    <div class="w3-container">
+        <div ng-repeat="job in $ctrl.data">
+            <job-experience data="job"></job-experience>
+        </div>
     </div>
 </div>
-

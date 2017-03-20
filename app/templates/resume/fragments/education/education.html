@@ -1,11 +1,12 @@
-
-<div class="card-header">
-    Education
-</div>
-<div ng-repeat="edu in $ctrl.data">
-    <div class="card-block">
-        <p>{{edu.institution}}</p>
-        <p>{{edu.degreeType}}</p>
-        <p>{{edu.major}}</p>
+<div class="card w3-card-8 w3-margin-bottom">
+    <header class="w3-container">
+        <span class="glyphicon glyphicon-apple resume-icon" aria-hidden="true"></span>  Education
+    </header>
+    <div class="w3-container">
+        <div ng-repeat="edu in $ctrl.data">
+            <p><b>{{edu.institution}}</b> - <em>{{edu.degreeType}}</em></p>
+            <p>{{edu.major}}</p>
+        </div>
     </div>
 </div>
+

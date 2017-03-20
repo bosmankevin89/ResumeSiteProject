@@ -1,17 +1,16 @@
+<!--<div class="card w3-white w3-text-grey w3-card-4 w3-margin-bottom">-->
+<div class="card w3-card-8 w3-margin-bottom">
+    <header class="w3-container">
+        <span class="glyphicon glyphicon-user resume-icon" aria-hidden="true"></span> About Me
+    </header>
+    <div class="w3-container">
+        <h3><b>{{$ctrl.data.name}}</b></h4>
+            <h5>{{$ctrl.data.label}}</h6>
 
-<div class="card-header">
-    About Me
-</div>
-<div class="card-block">
-    <h4 class="card-title">{{$ctrl.data.name}}</h4>
-    <h6 class="card-subtitle mb-2 text-muted">{{$ctrl.data.label}}</h6>
-
-    <!-- TODO Add Summary -->
-    
-    <address>
-        {{$ctrl.data.location.city}}, {{$ctrl.data.location.state}}<br>
-        <abbr title="Phone">P:</abbr> {{$ctrl.data.phone}}
-        <a href="mailto:#">{{$ctrl.data.email}}</a>
-    </address>
-</div>
-
+                <p>
+                    <span class="glyphicon glyphicon-home resume-icon" aria-hidden="true"></span> {{$ctrl.data.location.city}}, {{$ctrl.data.location.state}}<br>
+                    <span class="glyphicon glyphicon-earphone resume-icon" aria-hidden="true"></span>  {{$ctrl.data.phone}}<br>
+                    <span class="glyphicon glyphicon-envelope resume-icon" aria-hidden="true"></span>  <a href="mailto:#">{{$ctrl.data.email}}</a>
+                </p>
+                </div>
+</div>  
