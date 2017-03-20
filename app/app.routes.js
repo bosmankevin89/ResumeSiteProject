@@ -4,11 +4,8 @@
 
 angular.module('website-app')
     .config(function($routeProvider){
-        $routeProvider.when('/about', {
-            templateUrl:'app/templates/about/index.html'
-        })
-        .when('/resume', {
+        $routeProvider.when('/resume', {
             templateUrl:'app/templates/resume/index.html'
         })
-        .otherwise({ redirectTo: '/about' });
+        .otherwise({ redirectTo: '/resume' });
     });
