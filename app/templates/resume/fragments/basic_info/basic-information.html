@@ -1,9 +1,17 @@
-<div class="basic_info">
-    <h2>Basic Information:</h2>
-    <p id="name">{{$ctrl.data.name}}</p>
-    <p id="label">{{$ctrl.data.label}}</p>
-    <p id="email">{{$ctrl.data.email}}</p>
-    <p id="phone">{{$ctrl.data.phone}}</p>
-<!--    <p id="summary">{{$ctrl.data.summary}}</p>-->
-    <p id="location">{{$ctrl.data.location.city}}, {{$ctrl.data.location.state}}</p>
+
+<div class="card-header">
+    About Me
 </div>
+<div class="card-block">
+    <h4 class="card-title">{{$ctrl.data.name}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">{{$ctrl.data.label}}</h6>
+
+    <!-- TODO Add Summary -->
+    
+    <address>
+        {{$ctrl.data.location.city}}, {{$ctrl.data.location.state}}<br>
+        <abbr title="Phone">P:</abbr> {{$ctrl.data.phone}}
+        <a href="mailto:#">{{$ctrl.data.email}}</a>
+    </address>
+</div>
+

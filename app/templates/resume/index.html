@@ -1,14 +1,28 @@
 <div class="resume" ng-controller="ResumeController as resumeCtrl">
-    
-    <!-- Display Basic Information -->
-    <basic-information data="resumeCtrl.getBasicInfo()"></basic-information>
-    
-    <!-- Display Skills -->
-    <skills-list data="resumeCtrl.getSkills()"></skills-list>
-    
-    <!-- Display Education -->
-    <education data="resumeCtrl.getEducation()"></education>
-    
-    <!-- Display Professional Experience -->
-    <job-experience-list data="resumeCtrl.getJobExperiences()"></job-experience-list>
+
+    <div class="container-fluid">
+        <div class="card-columns">
+            <!-- Display Basic Information -->
+            <div class="card card-outline-primary w-100">
+                <basic-information data="resumeCtrl.getBasicInfo()"></basic-information>
+            </div>
+
+            <!-- Display Skills -->
+            <div class="card card-outline-primary w-100">
+                <skills-list data="resumeCtrl.getSkills()"></skills-list>
+            </div>
+
+            <!-- Display Professional Experience -->
+            <div class="card card-outline-primary w-100">
+                <job-experience-list data="resumeCtrl.getJobExperiences()"></job-experience-list>
+            </div>
+            
+            <!-- Display Education -->
+            <div class="card card-outline-primary w-100">
+                <education data="resumeCtrl.getEducation()"></education>
+            </div>
+
+        </div>
+    </div>
+
 </div>
