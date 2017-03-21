@@ -26,11 +26,14 @@
 .navbar {
     background-color: #574F4F;
     color: #EEE7EB;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #C09033;
     margin-bottom: 16px;
 }
 
 
 a.nav-link {
-   color: #e3f2fd;
- }
+    color: #e3f2fd;
+}
 

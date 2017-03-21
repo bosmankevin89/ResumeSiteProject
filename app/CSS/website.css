@@ -33,7 +33,7 @@ body {
     background-color: #C7D3D4;
     font-family: 'Aldrich';
     font-size: 22px;
-/*    margin-top: 75px;*/
+    /*    margin-top: 75px;*/
 }
 
 .container { 
@@ -48,7 +48,7 @@ body {
     border-style: solid;
     border-width: 2px;
     border-color: #574F4F;
-    
+
 }
 
 .card-header {
@@ -73,3 +73,19 @@ body {
 .resume ul {
     list-style-type:none
 }
+
+.footer {
+    background-color: #574F4F;
+    color: #EEE7EB;
+    margin-top: 16px;
+    text-align: center;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: #C09033;
+}
+
+.footer a{
+    color: #C09033;
+}
+
+
