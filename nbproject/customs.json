@@ -14,6 +14,9 @@
     "attributes": {
         "integrity": {
             "context": "link"
+        },
+        "aria-expanded": {
+            "context": "button"
         }
     }
 }

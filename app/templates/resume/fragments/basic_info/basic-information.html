@@ -1,16 +1,16 @@
-<!--<div class="card w3-white w3-text-grey w3-card-4 w3-margin-bottom">-->
-<div class="card w3-card-8 w3-margin-bottom">
-    <header class="w3-container">
-        <span class="glyphicon glyphicon-user resume-icon" aria-hidden="true"></span> About Me
-    </header>
-    <div class="w3-container">
-        <h3><b>{{$ctrl.data.name}}</b></h4>
-            <h5>{{$ctrl.data.label}}</h6>
-
-                <p>
-                    <span class="glyphicon glyphicon-home resume-icon" aria-hidden="true"></span> {{$ctrl.data.location.city}}, {{$ctrl.data.location.state}}<br>
-                    <span class="glyphicon glyphicon-earphone resume-icon" aria-hidden="true"></span>  {{$ctrl.data.phone}}<br>
-                    <span class="glyphicon glyphicon-envelope resume-icon" aria-hidden="true"></span>  <a href="mailto:#">{{$ctrl.data.email}}</a>
-                </p>
-                </div>
-</div>  
+<div class="card">
+    <div class="card-header">
+        <span class="fa fa-info-circle card-icon" aria-hidden="true"></span> About Me
+    </div>
+    <div>
+        <div class="card-block">
+            <h4 class="card-title"><b>{{$ctrl.data.name}}</b></h4>
+            <h5 class="card-subtitle mb-2 text-muted">{{$ctrl.data.label}}</h5>
+            <div class="card-text">
+                <span class="fa fa-home card-icon" aria-hidden="true"></span> {{$ctrl.data.location.city}}, {{$ctrl.data.location.state}}<br>
+                <span class="fa fa-phone-square card-icon" aria-hidden="true"></span>  {{$ctrl.data.phone}}<br>
+                <span class="fa fa-envelope card-icon" aria-hidden="true"></span>  <a href="mailto:#">{{$ctrl.data.email}}</a>
+            </div>
+        </div>
+    </div>  
+</div>

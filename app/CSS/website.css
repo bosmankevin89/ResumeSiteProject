@@ -33,24 +33,43 @@ body {
     background-color: #C7D3D4;
     font-family: 'Aldrich';
     font-size: 22px;
-    margin-top: 75px;
+/*    margin-top: 75px;*/
 }
 
-.resume ul {
-    list-style-type:none
+.container { 
+    width: auto; 
 }
 
 .card {
     word-wrap: break-word;
     background-color: #EEE7EB;
+    box-shadow: 8px 8px 1px 1px black;
+    margin-bottom: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #574F4F;
+    
 }
 
-.card header {
+.card-header {
     word-wrap: break-word;
     background-color: #81BCBC;
     color: #EEE7EB;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #C09033;
+    padding: 8px;
 }
 
-.card .resume-icon {
+.card-header .card-icon {
+    color: #574F4F;
+    font-size:32px;
+}
+
+.card-text .card-icon {
     color: #C09033;
+}
+
+.resume ul {
+    list-style-type:none
 }
