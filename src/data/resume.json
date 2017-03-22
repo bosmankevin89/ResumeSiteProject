@@ -14,7 +14,7 @@
     },
     "education": [
         {
-          "education_level": "College",
+          "educationLevel": "College",
           "institution": "University of Wisconsin - Oshkosh",
           "major": "Majored in Computer Science with an emphasis in Software Engineering",
           "degreeType" : "Bachelor of Science"

@@ -9,7 +9,7 @@
 
                         ctrl.resumeJSON = {};
 
-                        $http.get('app/data/resume.json')
+                        $http.get('src/data/resume.json')
                                 .then(function (res) {
                                     ctrl.resumeJSON = res.data;
                                 });
@@ -41,7 +41,7 @@
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/basic_info/basic-information.html'
+                        , templateUrl: 'src/components/resume/fragments/basic_info/basic-information.html'
                     })
             .component('education',
                     {
@@ -49,7 +49,7 @@
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/education/education.html'
+                        , templateUrl: 'src/components/resume/fragments/education/education.html'
                     })
             .component('skillsList',
                     {
@@ -57,7 +57,7 @@
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/skills/skills-list.html'
+                        , templateUrl: 'src/components/resume/fragments/skills/skills-list.html'
                     })
             .component('jobExperienceList',
                     {
@@ -65,7 +65,7 @@
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/job_experience/job-experience-list.html'
+                        , templateUrl: 'src/components/resume/fragments/job_experience/job-experience-list.html'
                     })
             .component('jobExperience',
                     {
@@ -73,6 +73,6 @@
                         , bindings: {
                             data: '<'
                         }
-                        , templateUrl: 'app/templates/resume/fragments/job_experience/job-experience.html'
+                        , templateUrl: 'src/components/resume/fragments/job_experience/job-experience.html'
                     });
 })();

@@ -5,7 +5,7 @@
 angular.module('website-app')
     .config(function($routeProvider){
         $routeProvider.when('/resume', {
-            templateUrl:'app/templates/resume/index.html'
+            templateUrl:'src/components/resume/index.html'
         })
         .otherwise({ redirectTo: '/resume' });
     });
