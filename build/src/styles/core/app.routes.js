@@ -1,0 +1,1 @@
+angular.module("website-app").config(function(e){e.when("/resume",{templateUrl:"src/components/resume/index.html"}).otherwise({redirectTo:"/resume"})});
